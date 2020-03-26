@@ -10,22 +10,27 @@ if (process.env.DATABASE_URL) {
   });
 } else {
   sequelize = new Sequelize({
-    database: "foodstagram_db",
+    database: "sw",
     dialect: "postgres",
     define: {
       underscored: true
     }
-  });
+  }
+  );
 }
 
-class Post extends Sequelize.Model {}
+class Post extends Sequelize.Model {
+
+}
 
 Post.init(
   {
     title: Sequelize.STRING,
-    image_url: Sequelize.TEXT,
-    description: Sequelize.TEXT,
-    location: Sequelize.TEXT
+    firstPic: Sequelize.TEXT,
+    secondPic: Sequelize.TEXT,
+    price: Sequelize.NUMBER,
+    sale: Sequelize.NUMBER,
+    color: Sequelize.TEXT
   },
   {
     sequelize,
@@ -51,7 +56,9 @@ User.init(
   }
 );
 
-class Comment extends Sequelize.Model {}
+class Comment extends Sequelize.Model {
+
+}
 
 Comment.init(
   {
