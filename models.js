@@ -22,14 +22,15 @@ class Post extends Sequelize.Model {}
 
 Post.init(
   {
+    gender: Sequelize.STRING,
     title: Sequelize.STRING,
     firstPic: Sequelize.TEXT,
     secondPic: Sequelize.TEXT,
     colors: Sequelize.ARRAY(Sequelize.TEXT),
     sizes: Sequelize.ARRAY(Sequelize.TEXT),
     type: Sequelize.TEXT,
-    price: Sequelize.NUMBER,
-    sale: Sequelize.NUMBER,
+    price: Sequelize.INTEGER,
+    sale: Sequelize.INTEGER
   },
   {
     sequelize,
@@ -41,10 +42,13 @@ class User extends Sequelize.Model {}
 
 User.init(
   {
-    password: Sequelize.STRING,
-    firstName: Sequelize.STRING,
-    lastName: Sequelize.STRING,
-    email: Sequelize.TEXT
+    username: Sequelize.STRING,
+    password_digest: Sequelize.STRING,
+    usertag: Sequelize.TEXT,
+    image_url: Sequelize.TEXT,
+    description: Sequelize.TEXT,
+    email: Sequelize.TEXT,
+    followers: Sequelize.ARRAY(Sequelize.TEXT)
   },
   {
     sequelize,

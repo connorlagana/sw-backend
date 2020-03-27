@@ -6,26 +6,19 @@ const seed = async () => {
   await Comment.destroy({ where: {} });
 
   const admin = await User.create({
-    password: "password",
-    email: "connor.lagana@gmail.com",
-    firstName: "Connor",
-    lastName: "Lagana"
+    username: "admin",
+    password_digest:
+      "$2b$11$XMmtqpO0QIrgOdGcIwr0UOVPueNHUbPAhVRwSNdx0FTao6L4pI15.",
+    email: "admin@admin.com",
+    description: "I am the admin, and you will do as I say",
+    image_url:
+      "https://townsquare.media/site/555/files/2012/11/bill-gates.jpg?w=980&q=75",
+    usertag: "@admin",
+    followers: [1, 2, 3, 4]
   });
 
-  const post1 = await Post.create({
-    title: "FAVORITE DAUGHTER LOOSE TEE - WHITE",
-    firstPic:
-      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018.FAVORITE.DAUGHTER.LOOSE.TEE-2.jpg?v=1558568473",
-    secondPic:
-      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-549_WHT.FAVORITE.DAUGHTER.LOOSE.TEE-1.jpg?v=1582162766",
-    colors: ["white"],
-    sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee",
-    price: 45,
-    sale: null
-  });
-
-  const post1 = await Post.create({
+  const post2 = await Post.create({
+    gender: "women",
     title: "WORK HARD LOOSE TEE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-116_WHT.WORK.HARD.AND.BE.NICE.LOOSE.TEE-4_1.jpg?v=1585249787",
@@ -37,8 +30,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post3 = await Post.create({
+    gender: "women",
     title: "HOMEBODY WILLOW SWEATSHIRT",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W4049-79_BLK_1.BIG.jpg?v=1571440150",
@@ -50,8 +43,8 @@ const seed = async () => {
     price: 64,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post4 = await Post.create({
+    gender: "women",
     title: "BE A NICE HUMAN LOOSE TEE - WHITE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-XX.BE.A.NICE.HUMAN.LOOSE.TEE.WHT-1-2.jpg?v=1574198127",
@@ -63,8 +56,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post5 = await Post.create({
+    gender: "women",
     title: "THE TRINITY LOOSE TEE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/THE.TRINITY.gif?v=1521591301",
@@ -76,8 +69,8 @@ const seed = async () => {
     price: 114,
     sale: 72
   });
-
-  const post1 = await Post.create({
+  const post6 = await Post.create({
+    gender: "women",
     title: "BE BRAVE AND KIND LOOSE TEE - BLACK",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/NEW3.jpg?v=1575660715",
@@ -89,8 +82,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post7 = await Post.create({
+    gender: "women",
     title: "FAVORITE DAUGHTER FITTED VANESSA TEE - WHITE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3043-4_WHT.jpg?v=1550689257",
@@ -102,8 +95,8 @@ const seed = async () => {
     price: 45,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post8 = await Post.create({
+    gender: "women",
     title: "THE TRINITY POPPY TEE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/ezgif.com-optimize_2.gif?v=1532121925",
@@ -115,8 +108,8 @@ const seed = async () => {
     price: 114,
     sale: 72
   });
-
-  const post1 = await Post.create({
+  const post9 = await Post.create({
+    gender: "women",
     title: "FAVORITE DAUGHTER FITTED VANESSA TEE - HTHR",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3043-5.FAVORITE.DAUGHTER_HGR-17.jpg?v=1536608853",
@@ -128,8 +121,8 @@ const seed = async () => {
     price: 45,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post10 = await Post.create({
+    gender: "women",
     title: "CAMO STRIPE CAMBRIDGE SWEATS",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W7013-18_CAMO.CAMO.STRIPE.CAMBRIDGE-1.jpg?v=1570140724",
@@ -141,8 +134,8 @@ const seed = async () => {
     price: 78,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post11 = await Post.create({
+    gender: "women",
     title: "FAVORITE DAUGHTER LOOSE TEE - HTHR",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-549_HGR.FAVORITE.DAUGHTER.LOOSE.TEE-1.jpg?v=1574277470",
@@ -154,8 +147,8 @@ const seed = async () => {
     price: 45,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post12 = await Post.create({
+    gender: "women",
     title: "HEART EMB TEDDY ZIP UP JACKET",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W4071-1_BLK.HEART.EMB.TEDDY.JACKET-12.jpg?v=1562951505",
@@ -167,8 +160,8 @@ const seed = async () => {
     price: 98,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post13 = await Post.create({
+    gender: "women",
     title: "INDOORSY LOOSE TEE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/Uqh2Xl7g_1.jpg?v=1574202339",
@@ -180,8 +173,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post14 = await Post.create({
+    gender: "women",
     title: "GOOD VIBES LOOSE TEE - HTHR",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-9_GOOD.VIBES_HGR-2.jpg?v=1574198090",
@@ -193,8 +186,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post15 = await Post.create({
+    gender: "women",
     title: "POPPY TEE - BLACK",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3019_BLK.POPPY.TEE-5.jpg?v=1580238734",
@@ -206,8 +199,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post16 = await Post.create({
+    gender: "women",
     title: "POPPY TEE - WHITE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3019_WHT.jpg?v=1583174640",
@@ -219,8 +212,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post17 = await Post.create({
+    gender: "women",
     title: "ICONIC LOOSE TEE",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-341.ICONIC.10.jpg?v=1519426785",
@@ -232,8 +225,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post18 = await Post.create({
+    gender: "women",
     title: "KALE UNISEX SWEATSHIRT - HTHR",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/w6009A_KALE_Swetshirt_Hthr.jpg?v=1518832702",
@@ -245,8 +238,8 @@ const seed = async () => {
     price: 64,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post19 = await Post.create({
+    gender: "women",
     title: "HEART EMB CAMP TEE - BLACK",
     firstPic:
       "https://www.suburbanriot.com/products/w4051-14-blk?variant=16073632514119",
@@ -258,8 +251,8 @@ const seed = async () => {
     price: 52,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post20 = await Post.create({
+    gender: "women",
     title: "HEART EMB LOOSE TEE - HTHR",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-417.HEART.EMB_HGR-24.jpg?v=1532045140",
@@ -271,8 +264,8 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post21 = await Post.create({
+    gender: "women",
     title: "HEART EMB CAMP TEE - NAVY",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W4051-15.HEART.EMB.CAMP_NVY-2_1.jpg?v=1537825318",
@@ -284,8 +277,8 @@ const seed = async () => {
     price: 52,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post22 = await Post.create({
+    gender: "women",
     title: "CAMBRIDGE SWEATS - CHERRY",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W7013_CHERR.jpg?v=1559865487",
@@ -297,8 +290,8 @@ const seed = async () => {
     price: 72,
     sale: null
   });
-
-  const post1 = await Post.create({
+  const post23 = await Post.create({
+    gender: "women",
     title: "KALE WILLOW SWEATSHIRT - HTHR",
     firstPic:
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W4049-10.KALE.HGR-2.jpg?v=1514242297",
@@ -310,23 +303,34 @@ const seed = async () => {
     price: 38,
     sale: null
   });
-
-  await admin.addPost(post1);
+  // await admin.addPost(post1);
   await admin.addPost(post2);
+  await admin.addPost(post3);
+  await admin.addPost(post4);
+  await admin.addPost(post5);
+  await admin.addPost(post6);
+  await admin.addPost(post7);
+  await admin.addPost(post8);
+  await admin.addPost(post9);
+  await admin.addPost(post10);
+  await admin.addPost(post11);
+  await admin.addPost(post12);
+  await admin.addPost(post13);
+  await admin.addPost(post14);
+  await admin.addPost(post15);
+  await admin.addPost(post16);
+  await admin.addPost(post17);
+  await admin.addPost(post18);
+  await admin.addPost(post19);
+  await admin.addPost(post20);
+  await admin.addPost(post21);
+  await admin.addPost(post22);
+  await admin.addPost(post23);
 
-  const comment1 = await Comment.create({
-    comment:
-      "Hi Connor here! I adore you! I think you're the best! Please accept my friend invite on Foodstagram!"
-  });
-
-  const comment2 = await Comment.create({
-    comment: "You're a bloody legend mate!"
-  });
-
-  await post1.addComment(comment1);
-  await connor.addComment(comment1);
-  await post2.addComment(comment2);
-  await Braam.addComment(comment2);
+  // await post1.addComment(comment1);
+  // await connor.addComment(comment1);
+  // await post2.addComment(comment2);
+  // await Braam.addComment(comment2);
 
   process.exit();
 };
