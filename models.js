@@ -15,22 +15,19 @@ if (process.env.DATABASE_URL) {
     define: {
       underscored: true
     }
-  }
-  );
+  });
 }
 
-class Post extends Sequelize.Model {
-
-}
+class Post extends Sequelize.Model {}
 
 Post.init(
   {
     title: Sequelize.STRING,
     firstPic: Sequelize.TEXT,
     secondPic: Sequelize.TEXT,
-    price: Sequelize.NUMBER,
-    sale: Sequelize.NUMBER,
-    color: Sequelize.TEXT
+    colors: Sequelize.ARRAY(Sequelize.TEXT),
+    sizes: Sequelize.ARRAY(Sequelize.TEXT),
+    type: Sequelize.TEXT
   },
   {
     sequelize,
@@ -42,13 +39,10 @@ class User extends Sequelize.Model {}
 
 User.init(
   {
-    username: Sequelize.STRING,
-    password_digest: Sequelize.STRING,
-    usertag: Sequelize.TEXT,
-    image_url: Sequelize.TEXT,
-    description: Sequelize.TEXT,
-    email: Sequelize.TEXT,
-    followers: Sequelize.ARRAY(Sequelize.TEXT)
+    password: Sequelize.STRING,
+    firstName: Sequelize.STRING,
+    lastName: Sequelize.STRING,
+    email: Sequelize.TEXT
   },
   {
     sequelize,
@@ -56,9 +50,7 @@ User.init(
   }
 );
 
-class Comment extends Sequelize.Model {
-
-}
+class Comment extends Sequelize.Model {}
 
 Comment.init(
   {

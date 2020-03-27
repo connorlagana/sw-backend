@@ -1,7 +1,9 @@
 const express = require("express");
 const PORT = process.env.PORT || 3000;
 
+const postRouter = require("./routes/postRouter");
 const userRouter = require("./routes/userRouter.js");
+const commentRouter = require("./routes/commentRouter");
 
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -14,6 +16,8 @@ app.use(bodyParser.json());
 
 // routes
 app.use("/users", userRouter);
+app.use("/posts", postRouter);
+app.use("/comments", commentRouter);
 
 // error handling
 app.use((err, req, res, next) => {
