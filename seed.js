@@ -208,35 +208,41 @@ const seed = async () => {
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
+    title: "POPPY TEE - WHITE",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3019_WHT.jpg?v=1583174640",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3019-1.POPPY.TEE_WHT-2.jpg?v=1583174640",
+    colors: ["white"],
+    sizes: ["xs", "s", "m", "l"],
     type: "tee",
-    price: 114,
+    price: 38,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
+    title: "ICONIC LOOSE TEE",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-341.ICONIC.10.jpg?v=1519426785",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-341.ICONIC-BLK-3.jpg?v=1519426785",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
     type: "tee",
-    price: 114,
+    price: 38,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
+    title: "KALE UNISEX SWEATSHIRT - HTHR",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/w6009A_KALE_Swetshirt_Hthr.jpg?v=1518832702",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/U2010-4.KALE.Crew.Hthr-1.jpg?v=1518832702",
+    colors: ["gray"],
+    sizes: ["xs", "s", "m"],
     type: "tee",
-    price: 114,
+    price: 64,
     sale: null
   });
 
