@@ -27,7 +27,9 @@ Post.init(
     secondPic: Sequelize.TEXT,
     colors: Sequelize.ARRAY(Sequelize.TEXT),
     sizes: Sequelize.ARRAY(Sequelize.TEXT),
-    type: Sequelize.TEXT
+    type: Sequelize.TEXT,
+    price: Sequelize.NUMBER,
+    sale: Sequelize.NUMBER,
   },
   {
     sequelize,
