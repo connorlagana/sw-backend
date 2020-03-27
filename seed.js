@@ -247,35 +247,67 @@ const seed = async () => {
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
+    title: "HEART EMB CAMP TEE - BLACK",
+    firstPic:
+      "https://www.suburbanriot.com/products/w4051-14-blk?variant=16073632514119",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4051-14.HEART.EMB.CAMP.TEE_BLK-12.jpg?v=1537825401",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
     type: "tee",
-    price: 114,
+    price: 52,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
+    title: "HEART EMB LOOSE TEE - HTHR",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-417.HEART.EMB_HGR-24.jpg?v=1532045140",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-417.HEART.EMB_HGR-7.jpg?v=1532045140",
+    colors: ["gray"],
+    sizes: ["xs", "s", "m", "l"],
     type: "tee",
-    price: 114,
+    price: 38,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
+    title: "HEART EMB CAMP TEE - NAVY",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4051-15.HEART.EMB.CAMP_NVY-2_1.jpg?v=1537825318",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4051-15.HEART.EMB.CAMP_NVY-2.jpg?v=1537825318",
+    colors: ["blue"],
     sizes: ["xs", "s", "m", "l", "xl"],
     type: "tee",
-    price: 114,
+    price: 52,
+    sale: null
+  });
+
+  const post1 = await Post.create({
+    title: "CAMBRIDGE SWEATS - CHERRY",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W7013_CHERR.jpg?v=1559865487",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W7013_CHERR.2.jpg?v=1559865487",
+    colors: ["red"],
+    sizes: ["s", "m", "l", "xl"],
+    type: "pants",
+    price: 72,
+    sale: null
+  });
+
+  const post1 = await Post.create({
+    title: "KALE WILLOW SWEATSHIRT - HTHR",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4049-10.KALE.HGR-2.jpg?v=1514242297",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4049-10.KALE.HGR-1.jpg?v=1514242297",
+    colors: ["gray", "green"],
+    sizes: ["xs", "s", "m", "l", "xl"],
+    type: "sweatshirt",
+    price: 38,
     sale: null
   });
 
