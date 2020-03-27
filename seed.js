@@ -143,57 +143,67 @@ const seed = async () => {
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
+    title: "FAVORITE DAUGHTER LOOSE TEE - HTHR",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-549_HGR.FAVORITE.DAUGHTER.LOOSE.TEE-1.jpg?v=1574277470",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-549_HGR_1.jpg?v=1574277470",
+    colors: ["gray"],
     sizes: ["xs", "s", "m", "l", "xl"],
     type: "tee",
-    price: 114,
+    price: 45,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
+    title: "HEART EMB TEDDY ZIP UP JACKET",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4071-1_BLK.HEART.EMB.TEDDY.JACKET-12.jpg?v=1562951505",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W4071-1_BLK.HEART.EMB.TEDDY.ZIP.UP-10_1.jpg?v=1563315255",
     colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee",
-    price: 114,
+    sizes: ["m"],
+    type: "sweatshirt",
+    price: 98,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
+    title: "INDOORSY LOOSE TEE",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/Uqh2Xl7g_1.jpg?v=1574202339",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-481_HGR.INDOORSY-12.jpg?v=1581719290",
+    colors: ["gray"],
     sizes: ["xs", "s", "m", "l", "xl"],
     type: "tee",
-    price: 114,
+    price: 38,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
+    title: "GOOD VIBES LOOSE TEE - HTHR",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-9_GOOD.VIBES_HGR-2.jpg?v=1574198090",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/0WknE7wg_1.jpg?v=1574203930",
+    colors: ["gray"],
+    sizes: ["xs", "s", "l"],
     type: "tee",
-    price: 114,
+    price: 38,
     sale: null
   });
 
   const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
+    title: "POPPY TEE - BLACK",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3019_BLK.POPPY.TEE-5.jpg?v=1580238734",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3019_BLK.POPPY.TEE-1_1.jpg?v=1580238857",
     colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
+    sizes: ["s", "m"],
     type: "tee",
-    price: 114,
+    price: 38,
     sale: null
   });
 
