@@ -85,7 +85,61 @@ const seed = async () => {
       "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-429_BLK.BE.BRAVE.BE.KIND-1_1.jpg?v=1575660715",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 38,
+    sale: null
+  });
+
+  const post1 = await Post.create({
+    title: "FAVORITE DAUGHTER FITTED VANESSA TEE - WHITE",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3043-4_WHT.jpg?v=1550689257",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3043-4.FAVORITE.DAUGHTER.VANESSA_WHT-3.jpg?v=1550689257",
+    colors: ["white"],
+    sizes: ["xs", "s", "m", "l", "xl"],
+    type: "tee",
+    price: 45,
+    sale: null
+  });
+
+  const post1 = await Post.create({
+    title: "THE TRINITY POPPY TEE",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/ezgif.com-optimize_2.gif?v=1532121925",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/TRINITY-POPPY.jpg?v=1532121925",
+    colors: ["black", "white", "gray"],
+    sizes: ["xs", "s", "m", "l", "xl"],
+    type: "tee",
+    price: 114,
+    sale: 72
+  });
+
+  const post1 = await Post.create({
+    title: "FAVORITE DAUGHTER FITTED VANESSA TEE - HTHR",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3043-5.FAVORITE.DAUGHTER_HGR-17.jpg?v=1536608853",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3043-5.FAVORITE.DAUGHTER_HGR-11.jpg?v=1536608853",
+    colors: ["gray"],
+    sizes: ["xs", "s", "m", "xl"],
+    type: "tee",
+    price: 45,
+    sale: null
+  });
+
+  const post1 = await Post.create({
+    title: "CAMO STRIPE CAMBRIDGE SWEATS",
+    firstPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W7013-18_CAMO.CAMO.STRIPE.CAMBRIDGE-1.jpg?v=1570140724",
+    secondPic:
+      "https://cdn.shopify.com/s/files/1/0863/0656/products/W3018-613_WHT.HOTTER.THAN.I.SHOULD.BE.W7013-18_CAMO.CAMO.STRIPE.CAMBRIDGE-1.jpg?v=1570140724",
+    colors: ["black", "green"],
+    sizes: ["xs", "s", "l"],
+    type: "pants",
+    price: 78,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -94,7 +148,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -103,7 +159,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -112,7 +170,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -121,7 +181,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -130,7 +192,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -139,7 +203,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -148,7 +214,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -157,7 +225,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -166,7 +236,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -175,7 +247,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   const post1 = await Post.create({
@@ -184,43 +258,9 @@ const seed = async () => {
     secondPic: "",
     colors: ["black"],
     sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
-  });
-
-  const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
-  });
-
-  const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
-  });
-
-  const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
-  });
-
-  const post1 = await Post.create({
-    title: "",
-    firstPic: "",
-    secondPic: "",
-    colors: ["black"],
-    sizes: ["xs", "s", "m", "l", "xl"],
-    type: "tee"
+    type: "tee",
+    price: 114,
+    sale: null
   });
 
   await admin.addPost(post1);
