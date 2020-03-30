@@ -6,15 +6,10 @@ const seed = async () => {
   await Comment.destroy({ where: {} });
 
   const admin = await User.create({
-    username: "admin",
-    password_digest:
-      "$2b$11$XMmtqpO0QIrgOdGcIwr0UOVPueNHUbPAhVRwSNdx0FTao6L4pI15.",
-    email: "admin@admin.com",
-    description: "I am the admin, and you will do as I say",
-    image_url:
-      "https://townsquare.media/site/555/files/2012/11/bill-gates.jpg?w=980&q=75",
-    usertag: "@admin",
-    followers: [1, 2, 3, 4]
+    firstName: "Connor",
+    lastName: "Lagana",
+    password_digest: "password",
+    email: "connor.lagana@gmail.com@gmail.com"
   });
 
   const post2 = await Post.create({
