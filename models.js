@@ -44,11 +44,8 @@ User.init(
   {
     username: Sequelize.STRING,
     password_digest: Sequelize.STRING,
-    usertag: Sequelize.TEXT,
-    image_url: Sequelize.TEXT,
-    description: Sequelize.TEXT,
     email: Sequelize.TEXT,
-    followers: Sequelize.ARRAY(Sequelize.TEXT)
+    cart: Sequelize.ARRAY(Sequelize.TEXT)
   },
   {
     sequelize,
